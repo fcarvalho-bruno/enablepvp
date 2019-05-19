@@ -1,0 +1,5 @@
+AddEventHandler("playerSpawned", function(spawn)
+	local ped = PlayerPedId()
+	SetCanAttackFriendly(ped, true, true)
+	NetworkSetFriendlyFireOption(true)
+end)
